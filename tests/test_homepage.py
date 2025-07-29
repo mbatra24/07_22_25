@@ -1,16 +1,15 @@
-from function.function import login
+from functions.function import FunctionLibrary
 from pages.homepage import HomePage
 
 
-class TestLogin:
-
+class TestHomepage:
     # def test_loginpage(setup):
     #     driver = setup
     #     # driver.save_screenshot("Reports/inventory.png")
     #     # login(driver)
 
 
-    def test_login(self,setup):
+    def test_homepage(self,setup):
         self.driver = setup
         hp = HomePage(self.driver)
         hp.homepage()

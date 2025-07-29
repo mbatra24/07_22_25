@@ -1,12 +1,14 @@
 import pytest
 
-from function.function import app_launch, login, closedriver
+
+from functions.function import FunctionLibrary
 
 
 @pytest.fixture
 def setup():
     # below driver is a variable
-    driver = app_launch("chrome")
-    login(driver)
+    fl = FunctionLibrary()
+    driver = fl.app_launch("chrome")
+    fl.login(driver)
     yield driver
-    closedriver(driver)
+    fl.closedriver(driver)
