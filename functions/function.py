@@ -20,8 +20,9 @@ class FunctionLibrary:
         self.driver.maximize_window()
         self.driver.get(URL)
         # navigation(driver, PAGE_URL)
-        time.sleep(5)
+        time.sleep(3)
         return self.driver
+
 
     def login(self, driver):
         # driver = app_launch()

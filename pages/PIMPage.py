@@ -28,7 +28,8 @@ def pim_search_employee(driver):
     driver.find_element(By.XPATH, "(//input[@placeholder='Type for hints...'])[1]").send_keys(pim_firstname)
     driver.find_element(By.CSS_SELECTOR, "button[type='submit']").click()
     time.sleep(3)
-    empname = driver.find_element(By.XPATH, "//div[contains(text(),'Gary A')]").text
+    # empname = driver.find_element(By.XPATH, "//div[contains(text(),'Gary A')]").text
+    empname = driver.find_element(By.XPATH, "//div[contains(text(),'" + pim_firstname + "')]").text
     print(empname)
     # Scroll to the bottom
     # driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")

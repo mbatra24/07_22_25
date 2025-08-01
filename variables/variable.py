@@ -1,5 +1,10 @@
 URL = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
 usr = "Admin"
 pwd = "admin123"
-pim_firstname = "Gary A"
-pim_lastname = "Dickhead"
+# pim_firstname = "James"
+# pim_lastname = "Bond"
+# admin_username = "jbtest1234!"
+
+pim_firstname = "John"
+pim_lastname = "Travolta"
+admin_username = "jtratest1234!"
